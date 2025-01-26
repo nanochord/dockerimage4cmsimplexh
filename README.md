@@ -1,8 +1,8 @@
 # Docker image for CMSimple_XH
 
-This repository contains a Dockerfile and compose yaml configuration file that can be used to build images for [CMSimple_XH](https://www.cmsimple-xh.org). CMSimple_XH is an open source, free CMS. [See the project on GitHub](https://www.cmsimple-xh.org).
+This repository contains a Dockerfile and compose yaml configuration files that can be used to build images for [CMSimple_XH](https://www.cmsimple-xh.org). CMSimple_XH is an open source, free CMS. [See the project on GitHub](https://www.cmsimple-xh.org).
 
-CMSimple_XH stores the content under the web server in dedicated folders and files, therefore the container needs to add both read and writer permissions to these objects and also needs to use mounted drives on the host file system in order to preserve CMS content among running sessions in the container.
+CMSimple_XH stores the content under the web server in dedicated folders and files, therefore the container needs to add both read and write permissions to these objects and also needs to use mounted drives on the host file system in order to preserve CMS content among running sessions in the container.
 
 ## How to build the image?
 
