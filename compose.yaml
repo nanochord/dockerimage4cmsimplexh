@@ -1,0 +1,23 @@
+# Run this compose yaml with the following command: docker compose up
+# Do not forget to delete file .defaultpwd.lock in mounted folder /data/userfiles/downloads/ before run up in order to avoid login issues.
+services:
+  cms:
+    image: "norlas/cmsimplexh:1.8"
+    ports:
+      - "1000:80"
+    volumes:
+      - cmsvol-content:/var/www/html/content
+      - cmsvol-userfiles:/var/www/html/userfiles
+volumes:
+  cmsvol-content:
+    driver: local
+    driver_opts:
+      type: "none"
+      o: "bind"
+      device: "./data/content/"
+  cmsvol-userfiles:
+    driver: local
+    driver_opts:
+      type: "none"
+      o: "bind"
+      device: "./data/userfiles/"
