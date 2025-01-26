@@ -22,7 +22,7 @@ CMSimple_XH stores the content under the web server in dedicated folders and fil
 
     $ docker compose up
 
-> Note: Note: Creating a new container always involves password reset in CMSimple_XH. Make sure that the previously created /data/userfiles/downloads/.defaultpwd.lock file is always deleted from the mounted file system before a new container is created and started, otherwise CMSimple_XH will ban the default password and the user won't be able to log in to edit the content.
+> Note: Creating a new container always involves password reset in CMSimple_XH. Make sure that the previously created /data/userfiles/downloads/.defaultpwd.lock file is always deleted from the mounted file system before a new container is created and started, otherwise CMSimple_XH will ban the default password and the user won't be able to log in to edit the content.
 
 ## Links
 
